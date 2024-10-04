@@ -20,7 +20,7 @@ export default function Home() {
             Elevating User Experiences with Creative Frontend Development.
           </h3>
           <div className="text-sm sm:text-base md:text-lg flex flex-wrap gap-4 lg:text-xl ">
-            Hello, it's me, Swikar! I recently completed my BCA and am passionate about building web applications.
+          Hello, it&apos;s me, Swikar! I recently completed my BCA and am passionate about building web applications.
             <ReadMorePopup className="mt-5"
               title={popupData.title}
               shortText={popupData.shortText}
