@@ -9,13 +9,13 @@ const Navbar = () => {
     const [isNavShowing, setIsNavShowing] = useState(false);
 
     return (
-        <nav className="sticky top-0 w-full p-6 lg:px-48 lg:py-8 z-50">
+        <nav className="sticky top-0 w-full  lg:px-48 lg:py-8 z-50">
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="logo" onClick={() => setIsNavShowing(false)}>
-                    <h2 className="text-4xl font-leckerli font-bold">Swikar</h2>
+                    <h2 className="text-4xl font-leckerli p-6 font-bold">Swikar</h2>
                 </Link>
                 <button
-                    className="md:hidden p-2"
+                    className="md:hidden p-6"
                     onClick={() => setIsNavShowing((prev) => !prev)}
                     aria-label="Toggle Navigation"
                 >
@@ -25,7 +25,7 @@ const Navbar = () => {
                  ${isNavShowing ? 'top-16' : '-top-40'} 
                  w-full md:w-auto transition-all duration-300 ease-in-out flex flex-col items-center 
                  ${isNavShowing ? 'block' : 'hidden'} 
-                 gap-4 md:gap-16 bg-blue-900 text-center md:bg-transparent`}>
+                 gap-4 md:gap-16 bg-blue-900 text-center text-white lg:text-black font-semibold md:bg-transparent`}>
                     {Links.map(({ name, path }, index) => (
                         <li key={index} className="my-2 md:my-0">
                             <Link

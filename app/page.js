@@ -7,19 +7,19 @@ import { popupData } from "@/data/herosection/data";
 
 export default function Home() {
   return (
-    <div className="relative lg:h-[90vh] h-[100vh] flex flex-col items-center justify-center lg:px-20">
+    <div className="relative lg:h-[86vh] h-[90vh] flex flex-col items-center justify-center lg:px-20">
       <div className="flex flex-col lg:flex-row w-full items-center justify-center gap-0 lg:gap-52">
         <div className="w-full lg:w-1/2 lg:p-4 p-6 lg:text-left text-center ">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
+          <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
             Passionate
           </h1>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
+          <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4">
             Frontend Developer
           </h1>
-          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl mb-2">
+          <h3 className="text-lg sm:text-lg md:text-xl lg:text-2xl mb-2">
             Elevating User Experiences with Creative Frontend Development.
           </h3>
-          <div className="text-sm sm:text-base md:text-lg flex flex-wrap gap-4 lg:text-xl ">
+          <div className="text-lg sm:text-base md:text-lg flex flex-wrap gap-4 lg:text-xl ">
           Hello, it&apos;s me, Swikar! I recently completed my BCA and am passionate about building web applications.
             <ReadMorePopup className="mt-5"
               title={popupData.title}
@@ -36,8 +36,8 @@ export default function Home() {
               width={700} 
               height={300} 
               className="rounded-full border-blue-900 
-                  border-[15px] w-[42%] 
-                  sm:border-[15px] sm:w-[42%] 
+                  border-[15px] w-[90%] 
+                  sm:border-[15px] sm:w-[70%] 
                   md:border-[25px] md:w-[50%] 
                   lg:border-[36px] lg:w-[80%] 
                   xl:border-[38px] xl:w-[90%%] h-auto"
