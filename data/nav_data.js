@@ -1,6 +1,5 @@
 export const Links = [
-    { name: 'About', path: '/' },
+    { name: 'Home', path: '/' },
     { name: 'Academic', path: '/academic' },
     { name: 'Stack', path: '/stack' },
-  ];
-  
+];

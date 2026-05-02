@@ -3,21 +3,22 @@ import { FaGithub, FaLinkedin, FaFacebook, FaBriefcase } from 'react-icons/fa';
 export const socialMediaLinks = [
     {
         name: "GitHub",
-        icon: <FaGithub size={30} color="#003366" />, 
+        icon: <FaGithub size={24} className="text-white" />,
+        url: "https://github.com/swikar"
     },
     {
         name: "LinkedIn",
-        icon: <FaLinkedin size={30} color="#003366" />,
+        icon: <FaLinkedin size={24} className="text-white" />,
         url: "https://www.linkedin.com/in/swikar-singh-a986a3214/"
     },
     {
         name: "Facebook",
-        icon: <FaFacebook size={30} color="#003366" />, 
+        icon: <FaFacebook size={24} className="text-white" />,
         url: "https://www.facebook.com/yourprofile"
     },
     {
         name: "Upwork",
-        icon: <FaBriefcase size={30} color="#003366" />, 
+        icon: <FaBriefcase size={24} className="text-white" />,
         url: "https://www.upwork.com/freelancers/~01956ed2261f8cceaa"
     }
 ];

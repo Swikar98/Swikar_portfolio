@@ -7,25 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        leckerli: ['Leckerli One', 'cursive'],
+      colors: {
+        accent: '#ff3d00',
+        'accent-secondary': '#00ff88',
+        dark: '#0a0a0a',
+        'dark-secondary': '#111111',
       },
-        animation: {
-            pulse: 'pulse 1.5s infinite',
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['Space Grotesk', 'monospace'],
+      },
+      animation: {
+        'marquee': 'marquee 20s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
-        keyframes: {
-            pulse: {
-                '0%, 100%': {
-                    transform: 'scale(1)',
-                    opacity: '1',
-                },
-                '50%': {
-                    transform: 'scale(1.1)',
-                    opacity: '0.7',
-                },
-            },
-        },
+      },
     },
-},
+  },
   plugins: [],
 };
