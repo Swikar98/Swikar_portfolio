@@ -49,9 +49,6 @@ export default function Home() {
             <a href="#skills" className="text-sm font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors">Skills</a>
             <a href="#contact" className="text-sm font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors">Contact</a>
           </div>
-          <Link href="/admin" className="px-6 py-3 bg-[#ff3d00] text-black font-black text-sm uppercase tracking-wider hover:bg-[#00ff88] transition-colors">
-            Admin
-          </Link>
         </div>
       </nav>
 
@@ -201,7 +198,7 @@ export default function Home() {
             <div>
               <p className="text-[#ff3d00] font-black uppercase tracking-widest text-sm mb-8">Experience</p>
               <div className="space-y-8">
-                {experience.map((exp, index) => (
+                {experience.map((exp) => (
                   <div key={exp.id} className="border-l-2 border-white/20 pl-6 hover:border-[#ff3d00] transition-colors">
                     <div className="flex items-start justify-between mb-2">
                       <h3 className="text-xl font-black">{exp.position}</h3>

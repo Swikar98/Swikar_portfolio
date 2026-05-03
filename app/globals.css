@@ -130,3 +130,37 @@ body {
   opacity: 0.03;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
+
+/* Page Transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateX(100px) scale(0.95);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateX(-100px) scale(0.95);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* Prevent scroll during transition */
+body.transitioning {
+  overflow: hidden;
+}
+
+/* Smooth perspective for 3D effects */
+.perspective-container {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}

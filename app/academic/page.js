@@ -46,10 +46,12 @@ export default function AcademicPage() {
           <Link href="/" className="text-2xl font-black tracking-tighter">
             SWIKAR<span className="text-[#ff3d00]">.</span>
           </Link>
-          <div className="hidden md:flex items-center gap-12">
+          <div className="hidden md:flex items-center gap-8">
             <Link href="/" className="text-sm font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors">Home</Link>
+            <Link href="/projects" className="text-sm font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors">Projects</Link>
+            <Link href="/blog" className="text-sm font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors">Blog</Link>
             <Link href="/academic" className="text-sm font-bold uppercase tracking-widest text-[#ff3d00]">Academic</Link>
-            <Link href="/stack" className="text-sm font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors">Stack</Link>
+            <Link href="/contact" className="text-sm font-bold uppercase tracking-widest text-white/60 hover:text-white transition-colors">Contact</Link>
           </div>
         </div>
       </nav>
